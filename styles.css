@@ -9,7 +9,18 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #fafafa;
+  /* Set a warm olive background colour to match the Herztiger branding */
+  background-color: #998037;
+  /* Apply the grayscale Herztiger illustration as a fixed watermark */
+  background-image: url('ht1_gray.png');
+  /* Keep the aspect ratio of the watermark and ensure it fits nicely */
+  background-size: contain;
+  /* Prevent the background from scrolling with the page */
+  background-attachment: fixed;
+  /* Do not repeat the watermark image */
+  background-repeat: no-repeat;
+  /* Position the watermark centrally */
+  background-position: center;
 }
 
 h1, h2 {
