@@ -25,9 +25,10 @@ section {
 }
 
 /* Hero section */
+/* Hero section with updated background path */
 .hero {
   position: relative;
-  background-image: url("assets/cover.png");
+  background-image: url("cover.png");
   background-size: cover;
   background-position: center;
   min-height: 60vh;
