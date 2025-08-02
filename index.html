@@ -4,37 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Herztiger‑Kurse</title>
+  <!-- Binde die überarbeitete Stylesheet-Datei ein -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Importiere die Quicksand‑Schrift aus Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hintergrundmusik: Herztiger-Rap -->
-  <!-- Das Audioelement spielt den Herztiger-Rap automatisch beim Laden der Seite ab. Einige Browser erlauben Autoplay nur nach Benutzerinteraktion. -->
+  <!-- Hintergrundmusik: Herztiger‑Rap (Autoplay kann je nach Browser eine Interaktion benötigen) -->
   <audio id="herztiger-audio" src="herztiger-rap.mp3" autoplay loop></audio>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Herztiger‑Kurse</h1>
-      <p>Selbstbehauptungskurse mit Herz für Kinder der Klassen&nbsp;1–2</p>
-      <a href="https://wa.me/491752287170" class="cta-button">Jetzt via WhatsApp anmelden</a>
-    </div>
-  </header>
+
+  <!-- Header dient jetzt nur noch als dekorativer Kopfbereich ohne fixierten Inhalt -->
+  <header class="hero"></header>
+
+  <!-- Kurs‑Intro: früher im Header platzierter Container nun im Inhaltsbereich -->
+  <section class="course-intro section">
+    <h1>Herztiger‑Kurse</h1>
+    <p>Selbstbehauptungskurse mit Herz für Kinder der Klassen&nbsp;1–2</p>
+    <a href="https://wa.me/491752287170" class="cta-button">Jetzt via WhatsApp anmelden</a>
+  </section>
 
   <!-- Über die Kurse -->
   <section id="about-herztiger-courses" class="about section">
     <h2>Über die Herztiger‑Kurse</h2>
     <p>
-      Die Herztiger‑Kurse sind ein einzigartiges Selbstbehauptungsprogramm für Kinder im Alter von fünf bis acht Jahren. Die Kurse wurden von erfahrenen Pädagoginnen entwickelt und basieren auf über 15 Jahren Unterrichtspraxis. In kleinen Gruppen lernen Kinder spielerisch, wie sie mit Mut, Herz und Empathie durchs Leben gehen.
+      Die Herztiger‑Kurse sind ein einzigartiges Selbstbehauptungsprogramm für Kinder im Alter von fünf bis acht Jahren.
+      Die Kurse wurden von erfahrenen Pädagog*innen und Trainern in liebevoller Art und Weise entwickelt und basieren auf über 15 Jahren Unterrichtspraxis.
+      In kleinen Gruppen lernen Kinder spielerisch, wie sie mit Mut, Herz und Empathie durchs Leben gehen.
     </p>
     <p>
-      Durch Bewegung, Rollenspiele und kreative Übungen üben sie, deutlich „Nein!“ zu sagen, sicher aufzutreten, Blickkontakt zu halten und Konflikte gewaltfrei zu lösen. Unsere Trainerinnen fördern dabei sowohl das Selbstvertrauen als auch die emotionale Kompetenz und Konfliktfähigkeit.
+      Durch Bewegung, Rollenspiele und kreative Übungen üben sie, deutlich „Nein!“ zu sagen, sicher aufzutreten, Blickkontakt zu halten und Konflikte gewaltfrei zu lösen.
+      Unsere Trainerinnen fördern dabei sowohl das Selbstvertrauen als auch die emotionale Kompetenz und Konfliktfähigkeit.
     </p>
     <p>
-      Durch die kindgerechte und bewegungsorientierte Lernumgebung entwickeln die Kinder eine starke innere Haltung, die vor Mobbing schützt und sie in Gefahrensituationen handlungsfähig macht. Gleichzeitig werden Empathie und respektvolles Verhalten geschult: Die kleinen „Herztiger“ lernen, anderen zuzuhören, Grenzen zu achten und fair zu bleiben.
+      Durch die kindgerechte und bewegungsorientierte Lernumgebung entwickeln die Kinder eine starke innere Haltung, die vor Mobbing schützt und sie in Gefahrensituationen handlungsfähig macht.
+      Gleichzeitig werden Empathie und respektvolles Verhalten geschult: Die kleinen „Herztiger“ lernen, anderen zuzuhören, Grenzen zu achten und fair zu bleiben.
     </p>
     <p>
       Ein gesunder Mix aus Motorik‑Training, Stärkung der Körpersprache und mentalem Coaching sorgt dafür, dass nicht nur das Selbstbewusstsein wächst, sondern auch Konzentration, Teamgeist und Achtsamkeit.
     </p>
+    <!-- Vor dem letzten Satz wurde ein eigener Absatz eingefügt, um ihn optisch hervorzuheben. -->
     <p>
-      Eltern und Pädagog:innen berichten, dass die Kinder nach kurzer Zeit offener, ausgeglichener und selbstsicherer auftreten – in der Schule, im Sportverein und zu Hause. Ein Herztiger‑Kurs ist damit weit mehr als ein Freizeitspaß: <strong>Er legt den Grundstein für lebenslange Resilienz, Mut und soziale Stärke.</strong>
+      Eltern und Pädagog:innen berichten, dass die Kinder nach kurzer Zeit offener, ausgeglichener und selbstsicherer auftreten – in der Schule, im Sportverein und zu Hause.
+    </p>
+    <p class="centered-quote">
+      <strong>Er legt den Grundstein für lebenslange Resilienz, Mut und soziale Stärke.</strong>
     </p>
     <p class="call-to-action">
       🎒 <em>Investieren Sie in die Zukunft Ihres Kindes und lassen Sie es nach den Sommerferien ein echter Herztiger werden!</em>
@@ -46,24 +59,78 @@
     <h2>Kursstart nach den Sommerferien</h2>
     <p><strong>Datum:</strong> 15.&nbsp;September&nbsp;2025<br>
        <strong>Zeit:</strong> 14:00–15:00&nbsp;Uhr<br>
-       <strong>Ort:</strong> Villinger Straße 20, 68239 Mannheim</p>
-    <p>Die Kursserie läuft wöchentlich mit jeweils 60‑Minuten‑Einheiten. Plätze sind begrenzt – jetzt reservieren!</p>
+       <strong>Ort:</strong> Villinger&nbsp;Straße&nbsp;20, 68239&nbsp;Mannheim</p>
+    <p>
+      Die Kursserie läuft wöchentlich mit jeweils 45–55‑Minuten‑Einheiten.
+      Die Kurse finden wöchentlich von Montag bis Donnerstag statt.
+      Je nach Auslastung können die Kurse in verschiedenen örtlichen Räumlichkeiten stattfinden;
+      selbstverständlich informieren wir Sie vor Kursstart rechtzeitig über den genauen Veranstaltungsort.
+    </p>
   </section>
 
-  <!-- Flyer Abschnitt -->
+  <!-- Flyer Abschnitt mit Downloadfunktion -->
   <section class="flyer-section section">
     <h2>Mehr Informationen</h2>
-    <img src="flyer.png" alt="Flyer der Herztiger‑Kurse">
+    <a href="flyer.pdf" download>
+      <img src="flyer.png" alt="Flyer der Herztiger‑Kurse">
+    </a>
+    <p><a href="flyer.pdf" download>Klicken Sie hier, um den Flyer herunterzuladen.</a></p>
   </section>
 
-  <!-- Kontakt Abschnitt -->
+  <!-- Kontaktformular (neu) -->
+  <section id="contact-form" class="contact-form section">
+    <h2>Bitte um weitere Informationen</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="lastname">Nachname*</label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+      <div class="form-group">
+        <label for="firstname">Vorname*</label>
+        <input type="text" id="firstname" name="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefonnummer*</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E‑Mail‑Adresse (optional)</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="interest">Ich habe Interesse an*</label>
+        <select id="interest" name="interest" required>
+          <option value="" disabled selected>Bitte wählen</option>
+          <option value="course">Ich habe Interesse an einer Kursteilnahme</option>
+          <option value="trainer">Ich habe Interesse an einer Trainerausbildung</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="preferredContact">Kontaktwunsch</label>
+        <select id="preferredContact" name="preferredContact">
+          <option value="" disabled selected>Bitte wählen</option>
+          <option value="callback">Bitte um Rückruf</option>
+          <option value="whatsapp">Bitte um weitere Infos per WhatsApp</option>
+          <option value="email">Bitte um weitere Infos per Email</option>
+        </select>
+      </div>
+      <button type="submit" class="cta-button">Senden</button>
+    </form>
+  </section>
+
+  <!-- Kontaktinformationen -->
   <section class="contact section">
     <h2>Kontakt</h2>
-    <p>Fragen? Schreiben Sie uns unter <a href="mailto:office@herztiger.de">office@herztiger.de</a> oder via WhatsApp.</p>
+    <p>
+      Fragen? Schreiben Sie uns unter
+      <a href="mailto:office@herztiger.de">office@herztiger.de</a> oder
+      <a href="https://wa.me/491752287170">via WhatsApp</a>.
+    </p>
   </section>
 
+  <!-- Fußzeile -->
   <footer>
-    <p>&copy;&nbsp;2025 Herztiger‑Kurse – EMSGL |
+    <p>©&nbsp;2025 Herztiger‑Kurse&nbsp;– EMSGL |
       <a href="impressum.html">Impressum</a> |
       <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
