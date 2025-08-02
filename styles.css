@@ -1,4 +1,11 @@
-/* Basic reset and typography */
+/*
+ * Überarbeitete Stylesheet für die Herztiger‑Website.
+ * Dieses Stylesheet verwendet die Schriftfamilie „Quicksand“ und sorgt dafür,
+ * dass der Header nicht fixiert bleibt, die Seite mobilfreundlich ist und
+ * zusätzliche Container wie das Kontaktformular harmonisch eingebunden werden.
+ */
+
+/* Grundlegende Zurücksetzung und Typografie */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,21 +13,17 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   color: #333;
-  /* Set a warm olive background colour to match the Herztiger branding */
   background-color: #998037;
-  /* Apply the grayscale Herztiger illustration as a fixed watermark */
+  /* Wasserzeichen im Hintergrund (optional) */
   background-image: url('ht1_gray.png');
-  /* Keep the aspect ratio of the watermark and ensure it fits nicely */
   background-size: contain;
-  /* Prevent the background from scrolling with the page */
-  background-attachment: fixed;
-  /* Do not repeat the watermark image */
   background-repeat: no-repeat;
-  /* Position the watermark centrally */
   background-position: center;
+  /* Scrollt mit der Seite mit, damit der Header nicht fixiert wirkt */
+  background-attachment: scroll;
 }
 
 h1, h2 {
@@ -35,66 +38,33 @@ section {
   margin: 0 auto;
 }
 
-/* Hero section */
-/* Hero section with updated background path */
+/* Header-Hero-Bereich: rein dekorativ ohne Inhalt */
 .hero {
-  position: relative;
   background-image: url("cover.png");
   background-size: cover;
   background-position: center;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
+  /* Höhe so wählen, dass das Bild wirken kann, aber nicht dominiert */
+  height: 50vh;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-  padding: 1em;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5em;
-}
-
-.hero-content p {
-  font-size: 1.25rem;
-  margin-bottom: 1em;
-}
-
-/* CTA Button */
+/* CTA-Button */
 .cta-button {
   display: inline-block;
   padding: 0.75em 1.5em;
-  background-color: #f59c00; /* warm yellow/orange */
+  background-color: #f59c00; /* warme Gelb/Orange‑Tönung */
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .cta-button:hover {
   background-color: #d98500;
 }
 
-/* Section styling */
+/* Allgemeine Abschnittsgestaltung */
 .section {
   background-color: #fff;
   border-radius: 8px;
@@ -103,7 +73,7 @@ section {
 }
 
 .section h2 {
-  color: #164e63; /* dark teal */
+  color: #164e63; /* dunkles Petrolblau */
   margin-bottom: 0.75em;
 }
 
@@ -112,6 +82,7 @@ section {
   font-size: 1rem;
 }
 
+/* Flyer‑Abschnitt */
 .flyer-section img {
   width: 100%;
   height: auto;
@@ -119,6 +90,56 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Zentrierter Satz im About‑Abschnitt */
+.centered-quote {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Kontaktformular‑Stil */
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.contact-form .form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1em;
+}
+
+/* Responsive Design: einspaltiges Layout auf kleineren Bildschirmen */
+@media (max-width: 600px) {
+  .contact-form .form-group {
+    flex: 1 1 100%;
+  }
+  section {
+    padding: 1.5em 1em;
+  }
+  .hero {
+    height: 30vh;
+  }
+}
+
+/* Fußzeile */
 footer {
   background-color: #164e63;
   color: #fff;
@@ -129,19 +150,4 @@ footer {
 
 footer p {
   font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .hero-content p {
-    font-size: 1rem;
-  }
-  .cta-button {
-    padding: 0.5em 1em;
-  }
-  section {
-    padding: 1.5em 1em;
-  }
 }
