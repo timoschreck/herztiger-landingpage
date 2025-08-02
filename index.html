@@ -103,7 +103,10 @@
   <section id="contact-form" class="contact-form section">
     <h2>Bitte um weitere Informationen</h2>
     <!-- Kontaktformular: sendet per Mail an office@herztiger.de -->
-    <form action="mailto:office@herztiger.de" method="post" enctype="text/plain">
+    <!-- Kontaktformular über FormSubmit: sendet die Daten direkt per HTTPS an office@herztiger.de ohne Mailprogramm -->
+    <form action="https://formsubmit.co/office@herztiger.de" method="POST">
+      <!-- Optional: Betreff der E-Mail, die FormSubmit sendet -->
+      <input type="hidden" name="_subject" value="Kontaktanfrage über Herztiger.de">
       <div class="form-group">
         <label for="lastname">Nachname*</label>
         <input type="text" id="lastname" name="lastname" required>
