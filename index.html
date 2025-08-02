@@ -2,49 +2,47 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <!-- Meta-Viewport für responsive Darstellung -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Verwenden Sie ein einziges Meta-Viewport-Tag für Responsive Design
+       (viewport-fit unterstützt Geräte mit Notch). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Herztiger-Kurse Mannheim – Selbstbehauptungskurse für Kinder (5–8 Jahre)</title>
+  <meta name="description" content="Herztiger‑Kurse bieten Kindern im Raum Mannheim spielerische Selbstbehauptungs‑ und Resilienz‑Trainings für Kinder von 5–8 Jahren.">
 
-<!-- Neuer Titel mit Standort und Zielgruppe -->
-<title>Herztiger-Kurse Mannheim – Selbstbehauptungskurse für Kinder (5–8 Jahre)</title>
-
-<!-- Meta-Description zur besseren Auffindbarkeit -->
-<meta name="description" content="Herztiger-Kurse bieten Kindern im Raum Mannheim spielerische Selbstbehauptungs- und Resilienz-Trainings für Kinder von 5–8 Jahren. Kleine Gruppen, erfahrene Pädagog*innen, mutig und empathisch.">
-
-<!-- Strukturierte Daten für Suchmaschinen (Schema.org) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Herztiger-Kurse",
-  "description": "Selbstbehauptungskurs für Kinder von 5–8 Jahren in Mannheim.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Herztiger-Kurse",
-    "url": "https://www.herztiger.de"
-  },
-  "startDate": "2025-09-15T14:00:00+02:00",
-  "location": {
-    "@type": "Place",
-    "name": "Villinger Straße 20, 68239 Mannheim, Deutschland"
+  <!-- Strukturierte Daten (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Herztiger‑Kurse",
+    "description": "Selbstbehauptungskurs für Kinder von 5–8 Jahren in Mannheim.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Herztiger‑Kurse",
+      "url": "https://www.herztiger.de"
+    },
+    "startDate": "2025-09-15T14:00:00+02:00",
+    "location": {
+      "@type": "Place",
+      "name": "Villinger Straße 20, 68239 Mannheim, Deutschland"
+    }
   }
-}
-</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herztiger‑Kurse</title>
-  <!-- Binde die überarbeitete Stylesheet-Datei ein -->
+  </script>
+
+  <!-- Einbinden der Original- und der mobilen Stylesheets -->
   <link rel="stylesheet" href="styles.css">
-  <!-- Importiere die Quicksand‑Schrift aus Google Fonts -->
+  <link rel="stylesheet" href="styles_mobile.css">
+  <!-- Preload der Quicksand-Schrift zur schnelleren Darstellung -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hintergrundmusik: Herztiger‑Rap (Autoplay kann je nach Browser eine Interaktion benötigen) -->
-  <audio id="herztiger-audio" src="herztiger-rap.mp3" autoplay loop></audio>
+  <!-- Hintergrundmusik (optional) -->
+  <audio id="herztiger-audio" src="herztiger-rap.mp3" loop></audio>
 
-  <!-- Header dient jetzt nur noch als dekorativer Kopfbereich ohne fixierten Inhalt -->
+  <!-- Hero-Bereich: reiner Hintergrund ohne fixierten Inhalt -->
   <header class="hero"></header>
 
-  <!-- Kurs‑Intro: früher im Header platzierter Container nun im Inhaltsbereich -->
+  <!-- Kursintro -->
   <section class="course-intro section">
     <h1>Herztiger‑Kurse</h1>
     <p>Selbstbehauptungskurse mit Herz für Kinder der Klassen&nbsp;1–2</p>
@@ -56,7 +54,7 @@
     <h2>Über die Herztiger‑Kurse</h2>
     <p>
       Die Herztiger‑Kurse sind ein einzigartiges Selbstbehauptungsprogramm für Kinder im Alter von fünf bis acht Jahren.
-      Die Kurse wurden von erfahrenen Pädagog*innen und Trainern in liebevoller Art und Weise entwickelt und basieren auf über 15 Jahren Unterrichtspraxis.
+      Die Kurse wurden von erfahrenen Pädagog*innen und Trainern in liebevoller Art und Weise entwickelt und basieren auf über 15 Jahren Unterrichtspraxis.
       In kleinen Gruppen lernen Kinder spielerisch, wie sie mit Mut, Herz und Empathie durchs Leben gehen.
     </p>
     <p>
@@ -70,10 +68,6 @@
     <p>
       Ein gesunder Mix aus Motorik‑Training, Stärkung der Körpersprache und mentalem Coaching sorgt dafür, dass nicht nur das Selbstbewusstsein wächst, sondern auch Konzentration, Teamgeist und Achtsamkeit.
     </p>
-    <!-- Vor dem letzten Satz wurde ein eigener Absatz eingefügt, um ihn optisch hervorzuheben. -->
-    <p>
-      Eltern und Pädagog:innen berichten, dass die Kinder nach kurzer Zeit offener, ausgeglichener und selbstsicherer auftreten – in der Schule, im Sportverein und zu Hause.
-    </p>
     <p class="centered-quote">
       <strong>Er legt den Grundstein für lebenslange Resilienz, Mut und soziale Stärke.</strong>
     </p>
@@ -82,7 +76,7 @@
     </p>
   </section>
 
-  <!-- Terminplan Abschnitt -->
+  <!-- Terminplan -->
   <section class="schedule section">
     <h2>Kursstart nach den Sommerferien</h2>
     <p><strong>Datum:</strong> 15.&nbsp;September&nbsp;2025<br>
@@ -96,16 +90,16 @@
     </p>
   </section>
 
-  <!-- Flyer Abschnitt mit Downloadfunktion -->
+  <!-- Flyer mit Lazy Loading -->
   <section class="flyer-section section">
     <h2>Mehr Informationen</h2>
     <a href="flyer.pdf" download>
-      <img src="flyer.png" alt="Flyer der Herztiger‑Kurse">
+      <img src="flyer.png" alt="Flyer der Herztiger‑Kurse" loading="lazy">
     </a>
     <p><a href="flyer.pdf" download>Klicken Sie hier, um den Flyer herunterzuladen.</a></p>
   </section>
 
-  <!-- Kontaktformular (neu) -->
+  <!-- Kontaktformular -->
   <section id="contact-form" class="contact-form section">
     <h2>Bitte um weitere Informationen</h2>
     <form action="#" method="post">
@@ -149,18 +143,12 @@
   <!-- Kontaktinformationen -->
   <section class="contact section">
     <h2>Kontakt</h2>
-    <p>
-      Fragen? Schreiben Sie uns unter
-      <a href="mailto:office@herztiger.de">office@herztiger.de</a> oder
-      <a href="https://wa.me/491752287170"</a>.
-    </p>
+    <p>Fragen? Schreiben Sie uns unter <a href="mailto:office@herztiger.de">office@herztiger.de</a> oder <a href="https://wa.me/491752287170">via WhatsApp</a>.</p>
   </section>
 
   <!-- Fußzeile -->
   <footer>
-    <p>©&nbsp;2025 Herztiger‑Kurse&nbsp;– EMSGL |
-      <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutz</a></p>
+    <p>© 2025 Herztiger‑Kurse – EMSGL | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
 </body>
 </html>
