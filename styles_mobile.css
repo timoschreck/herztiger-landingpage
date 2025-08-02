@@ -1,0 +1,50 @@
+/* styles_mobile.css: Ergänzende mobile-Optimierungen für die Herztiger -Landingpage */
+
+/* Zusätzliche Breakpoints für Tablets und Smartphones */
+
+/* Tablet-Portrait (bis 768 px). Reduziert die Padding -Abstände, verkleinert die
+   Überschriften und vergrößert Buttons leicht, damit sie besser getippt
+   werden können. */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5em 1em;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 1em;
+  }
+}
+
+/* Smartphone-Hochformat (bis 480 px). Erhöht die Höhe des Hero -Bereichs, zentriert
+   die Überschrift und macht die CTA -Schaltfläche vollflächig, damit sie
+   leichter zu treffen ist. */
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+  h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .cta-button {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+  }
+}
+
+/* Flexible Schriftgrößen: Verwenden Sie clamp(), damit die Überschriften auf
+   unterschiedlichen Bildschirmgrößen nicht zu groß oder zu klein werden. */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+}
+/* Größere Textbasis für Absätze. */
+.section p {
+  font-size: 1.05rem;
+}
